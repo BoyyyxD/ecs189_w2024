@@ -74,14 +74,15 @@ class CIFARDataSet(Dataset):
 # get some random training images
 
 
-# if __name__ == "__main__":
-    # s = ORLDataSet()
-    # rand_indx = torch.randint(len(s), size=(1,)).item()
-    # a = []
-    # for j in s:
-    #     i, l = j
-    #     print(f"{l=}")
-    #     a.append(l)
+if __name__ == "__main__":
+    s = ORLDataSet()
+    rand_indx = torch.randint(len(s), size=(1,)).item()
+    a = []
+    for j in s:
+        i, l = j
+        print(f"{l=}")
+        print(f"{i=}")
+        a.append(l)
         
     # l = torch.tensor(l)
     # l = torch.unique(l)
